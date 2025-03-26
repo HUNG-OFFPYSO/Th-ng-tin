@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HƯNG_OFFPYSO</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <button onclick="showSection('home')">🏠 Home</button>
+        <button onclick="showSection('blog')">📝 Blog</button>
+        <button onclick="showSection('projects')">🚀 Dự án</button>
+        <button onclick="showSection('admin')">🔧 Quản lý</button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <header class="profile">
+            <img src="images/avatar.png" alt="Avatar" class="avatar">
+            <h1>HƯNG_OFFPYSO <span class="verified">✔</span></h1>
+            <p>Lập trình viên & Nhà sáng tạo nội dung.</p>
+
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@hungoffpyso" target="_blank">TikTok</a>
+                <a href="https://www.facebook.com/hungoffpyso" target="_blank">Facebook</a>
+                <a href="https://t.me/hungoffpyso" target="_blank">Telegram</a>
+                <a href="tel:+84901234567">Gọi ngay</a>
+            </div>
+        </header>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="hidden">
+        <h1>📌 Blog</h1>
+        <div id="blog-list">
+            <a href="posts/bai1.html">Bài viết 1</a>
+            <a href="posts/bai2.html">Bài viết 2</a>
+        </div>
+    </section>
+
+    <!-- Dự án -->
+    <section id="projects" class="hidden">
+        <h1>🚀 Dự án</h1>
+        <div id="project-list">
+            <a href="projects/duan1.html">Dự án 1 (Python)</a>
+            <a href="projects/duan2.html">Dự án 2 (C++)</a>
+        </div>
+    </section>
+
+    <!-- Quản lý -->
+    <section id="admin" class="hidden">
+        <h1>🔧 Quản lý</h1>
+        <form id="admin-form">
+            <input type="text" placeholder="Tên bài viết" id="title">
+            <textarea placeholder="Nội dung" id="content"></textarea>
+            <button type="submit">Đăng bài</button>
+        </form>
+    </section>
+
+</body>
+</html>
